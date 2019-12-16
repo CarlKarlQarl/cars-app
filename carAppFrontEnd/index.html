@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script defer src="index.js"></script>
+    </head>
+
+    <body>
+        <form method="POST" action="http://localhost:3000/models">
+            <h3>Create Model</h3>
+            <label>Enter Model Name:</label>
+            <input type="text" name="name" placeholder="i.e. Corolla, Tacoma" />
+            <br></br>
+            <label>Enter Model Year:</label>
+            <input type="number" name="year" value="2019" max="2019"/>
+            <br></br>
+            <label>Select Make</label>
+            <select name="make">
+                <option value=1>Ford</option>
+                <option value=2>Toyota</option>
+                <option value=3>Honda</option>
+            </select>
+            <br></br>
+            <input type="submit" value="add model" />
+
+        </form>
+    </body>
+</html>
